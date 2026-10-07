@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SignalRHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6b50362d93c5284ddafcd26959b2cf3cd32c60d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SignalRHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SignalRHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

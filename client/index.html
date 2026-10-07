@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignalR - Lab</title>
+    <style>
+        .chat {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            height: 90vh;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: sans-serif;
+        }
+
+        #messageList {
+            flex: 1;
+            overflow-y: auto;
+            padding: 12px;
+        }
+
+        .chat-input {
+            display: flex;
+            gap: 8px;
+            padding: 12px;
+            border-top: 1px solid #ccc;
+        }
+
+        .chat-input textarea {
+            flex: 1;
+            resize: none;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        .chat-input button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            border: none;
+            border-radius: 6px;
+            background: #0b7cff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <div id="messageList">
+            <!-- Aqui que exibirá as mensagens recebidas pelo método ReceiveMessage via SignalR -->
+        </div>
+
+        <div class="chat-input">
+            <textarea id="messageInput" rows="2" placeholder="Digite sua mensagem..."></textarea>
+            <button id="button" title="Enviar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M2 21l21-9L2 3v7l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./wwwroot/lib/singalr/signalr.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/action.js"></script>
+</body>
+</html>
